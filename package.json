@@ -4,7 +4,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "srv": "nodemon app.js"
+    "srv": "nodemon app.js",
+    "front": "npm run start --prefix front",
+    "dev": "concurrently \"npm run srv\" \"npm run front\""
   },
   "author": "",
   "license": "ISC",
