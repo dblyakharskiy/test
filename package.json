@@ -1,0 +1,28 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "srv": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.1",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/wargnom.dimon/project-x.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/wargnom.dimon/project-x/issues"
+  },
+  "homepage": "https://gitlab.com/wargnom.dimon/project-x#readme",
+  "description": ""
+}
