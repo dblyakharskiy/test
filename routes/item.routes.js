@@ -85,12 +85,32 @@ router.delete("/delete/:id", auth, async (req, res) => {
   }
 });
 
-router.put("/update/:id", auth, async (req, res) => {
-  const item = await Item.findByIdAndUpdate(req.params.id, req.body)
-    .then((item) => res.json({ msg: "Updated successfully" }))
-    .catch((e) =>
-      res.status(400).json({ error: "Unable to update the Database" })
-    );
-});
+router.put(
+  "/update/:id",
+  [
+    check("photo", "Press password").exists(),
+    check("itemFirstName", "Press password").exists(),
+    check("itemLastName", "Press password").exists(),
+    check("phone", "Press password").exists(),
+    check("gender", "Press password").exists(),
+    check("age", "Press password").exists().isNumeric(),
+    check("doctor", "Press password").exists(),
+  ],
+  auth,
+  async (req, res) => {
+    const errors = validationResult(req);
+
+    if (!errors.isEmpty()) {
+      return res
+        .status(400)
+        .json({ errors: errors.array(), massage: "Fill all fields" });
+    }
+    const item = await Item.findByIdAndUpdate(req.params.id, req.body)
+      .then((item) => res.json({ msg: "Updated successfully" }))
+      .catch((e) =>
+        res.status(400).json({ error: "Unable to update the Database" })
+      );
+  }
+);
 
 module.exports = router;
