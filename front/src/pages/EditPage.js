@@ -2,10 +2,10 @@ import React, { useCallback, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useHttp } from "../components/hooks/http.hook";
 import { Loader } from "../components/Loader";
-import { MainItemAbout } from "../components/MainItemAbout";
+import { MainItemEdit } from "../components/MainItemEdit";
 import { AuthContext } from "../context/AuthContext";
 
-export const AboutPage = () => {
+export const EditPage = () => {
   const { token } = useContext(AuthContext);
   const { request, loading } = useHttp();
   const [item, setItem] = useState(null);
@@ -27,5 +27,5 @@ export const AboutPage = () => {
   if (loading) {
     return <Loader />;
   }
-  return <>{!loading && item && <MainItemAbout item={item} />}</>;
+  return <>{!loading && item && <MainItemEdit item={item} />}</>;
 };

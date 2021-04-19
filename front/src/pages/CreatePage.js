@@ -1,9 +1,10 @@
 import React from "react";
+import MainItemCreate from "../components/MainItemCreate";
 
 export const CreatePage = () => {
   return (
-    <div>
-      <h2>CreatePage</h2>
-    </div>
+    <>
+      <MainItemCreate></MainItemCreate>
+    </>
   );
 };

@@ -1,0 +1,31 @@
+.header-container {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  margin-top: 0;
+}
+.header__nav {
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+  &__logo {
+    font-size: 1.375em;
+    color: rgba($color: #ffffff, $alpha: 1);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    margin: auto 0;
+  }
+  &__item {
+    display: flex;
+    list-style-type: none;
+  }
+  &__link {
+    color: rgba($color: #ffffff, $alpha: 1);
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 16px;
+    display: block;
+  }
+  &__link.active {
+    display: block;
+  }
+}

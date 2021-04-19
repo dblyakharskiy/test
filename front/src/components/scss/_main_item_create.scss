@@ -1,0 +1,52 @@
+.item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 1rem;
+  &__img {
+    display: flex;
+    width: 320px;
+    height: 480px;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  &__input-box {
+    margin: 2rem;
+  }
+  &__input {
+    color: blue;
+  }
+}
+.item-btns {
+  display: flex;
+  justify-content: center;
+}
+.item-btn {
+  padding: 0.5rem;
+  width: 10rem;
+  font-size: 1em;
+  margin: 0.5rem;
+}
+.item-edit-btn {
+  padding: 0.5rem;
+  width: 10rem;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5rem;
+  border: 2px solid black;
+  text-align: center;
+  text-decoration: none;
+  background-color: grey;
+  border-radius: 5px;
+}

@@ -1,0 +1,13 @@
+.modal-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+
+  border: 2px solid black;
+
+  margin: auto;
+}
+.modal__btn__close {
+  justify-content: center;
+  margin: auto 3rem;
+}

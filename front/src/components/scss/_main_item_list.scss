@@ -1,0 +1,38 @@
+.itemlist-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 2rem;
+  border: 2px solid black;
+  width: 25%;
+  margin: 2rem auto;
+  margin-left: 0;
+  background-color: black;
+  opacity: 0.4;
+  overflow-y: auto;
+}
+.itemlist {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.itemlist-btn {
+  margin: 0.5rem;
+  font-size: 1em;
+  color: rgb(26, 13, 13);
+  padding: 0.5rem;
+}
+.itemlist-tbody {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-color: yellow;
+
+  &__box {
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5em;
+    color: white;
+    margin: auto 0.5rem;
+  }
+}

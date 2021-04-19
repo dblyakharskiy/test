@@ -1,6 +1,11 @@
-.container {
-  background-image: url(./img/background.jpg);
-  background-size: cover;
-
-  margin: 0 auto;
-}
+@import "./reset.css";
+@import "./components/scss/app";
+@import "./components/scss/footer";
+@import "./components/scss/form_login";
+@import "./components/scss/form_register";
+@import "./components/scss/header";
+@import "./components/scss/loader";
+@import "./components/scss/main";
+@import "./components/scss/main_item_create";
+@import "./components/scss/main_item_list";
+@import "./components/scss/main_item_modal";
