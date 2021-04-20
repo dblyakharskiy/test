@@ -52,7 +52,7 @@ export const MainItemEdit = () => {
       <MainItemModal
         page={
           <div className="item-container">
-            <div>
+            <div className="item-photo">
               <label htmlFor="photo">ID {itemId}</label>
               <input
                 id="photo"

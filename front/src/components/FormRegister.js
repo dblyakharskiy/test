@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useHttp } from "../components/hooks/http.hook";
 
@@ -9,10 +9,6 @@ export const FormRegister = () => {
     firstName: "",
     lastName: "",
     password: "",
-  });
-
-  useEffect(() => {
-    console.log();
   });
 
   const changeHandler = (event) => {

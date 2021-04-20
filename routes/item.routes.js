@@ -88,13 +88,13 @@ router.delete("/delete/:id", auth, async (req, res) => {
 router.put(
   "/update/:id",
   [
-    check("photo", "Press password").exists(),
-    check("itemFirstName", "Press password").exists(),
-    check("itemLastName", "Press password").exists(),
-    check("phone", "Press password").exists(),
-    check("gender", "Press password").exists(),
-    check("age", "Press password").exists().isNumeric(),
-    check("doctor", "Press password").exists(),
+    check("photo", "Add url").exists(),
+    check("itemFirstName", "Add FirstName").exists(),
+    check("itemLastName", "Add SecondName").exists(),
+    check("phone", "Add phone number").exists(),
+    check("gender", "Choise gender").exists(),
+    check("age", "Add age").exists().isNumeric(),
+    check("doctor", "Choise doctor").exists(),
   ],
   auth,
   async (req, res) => {

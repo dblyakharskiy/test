@@ -1,13 +1,13 @@
 .modal-container {
-  width: 90%;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1024px;
   display: flex;
   align-items: center;
-
   border: 2px solid black;
-
   margin: auto;
 }
 .modal__btn__close {
   justify-content: center;
-  margin: auto 3rem;
+  margin: 1rem;
 }

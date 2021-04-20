@@ -48,8 +48,8 @@ export const MainItemCreate = () => {
       <MainItemModal
         page={
           <div className="item-container">
-            <div>
-              <label htmlFor="photo">ID </label>
+            <div className="item-photo">
+              <label htmlFor="photo">Photo </label>
               <input
                 id="photo"
                 name="photo"
