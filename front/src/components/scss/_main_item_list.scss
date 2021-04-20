@@ -21,6 +21,9 @@
   font-size: 1em;
   color: rgb(26, 13, 13);
   padding: 0.5rem;
+  &__item {
+    text-decoration: none;
+  }
 }
 .itemlist-tbody {
   display: flex;

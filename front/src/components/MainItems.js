@@ -26,7 +26,9 @@ export const MainItems = ({ items }) => {
       />
       <div className="itemlist-wrapper">
         <button className="itemlist-btn">
-          <Link to={"/create"}>Create Item</Link>
+          <Link className="itemlist-btn__item" to={"/create"}>
+            Create Item
+          </Link>
         </button>
 
         <table className="itemlist">

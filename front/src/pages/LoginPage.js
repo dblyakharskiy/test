@@ -9,7 +9,7 @@ export const LoginPage = () => {
       <Header
         status={
           <li>
-            <p className="header__nav__link ">Loggining...</p>
+            <p className="header__nav__link ">Logging in...</p>
           </li>
         }
       ></Header>
